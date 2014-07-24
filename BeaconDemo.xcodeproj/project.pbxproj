@@ -19,6 +19,10 @@
 		A8D077B7198072EB00F08A4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D0779F198072EB00F08A4E /* UIKit.framework */; };
 		A8D077BF198072EB00F08A4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8D077BD198072EB00F08A4E /* InfoPlist.strings */; };
 		A8D077C1198072EB00F08A4E /* BeaconDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D077C0198072EB00F08A4E /* BeaconDemoTests.m */; };
+		A8D077CC198072FD00F08A4E /* BeaconTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D077CB198072FD00F08A4E /* BeaconTableViewController.m */; };
+		A8D077CE198074B400F08A4E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D077CD198074B400F08A4E /* CoreLocation.framework */; };
+		A8D077D0198082C600F08A4E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D077CF198082C600F08A4E /* CoreBluetooth.framework */; };
+		A8D0BE641981B1D70033C4A3 /* TestBeacon.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D0BE631981B1D70033C4A3 /* TestBeacon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		A8D077BC198072EB00F08A4E /* BeaconDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeaconDemoTests-Info.plist"; sourceTree = "<group>"; };
 		A8D077BE198072EB00F08A4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A8D077C0198072EB00F08A4E /* BeaconDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconDemoTests.m; sourceTree = "<group>"; };
+		A8D077CA198072FD00F08A4E /* BeaconTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconTableViewController.h; sourceTree = "<group>"; };
+		A8D077CB198072FD00F08A4E /* BeaconTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconTableViewController.m; sourceTree = "<group>"; };
+		A8D077CD198074B400F08A4E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A8D077CF198082C600F08A4E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		A8D0BE621981B1D70033C4A3 /* TestBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBeacon.h; sourceTree = "<group>"; };
+		A8D0BE631981B1D70033C4A3 /* TestBeacon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBeacon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8D077D0198082C600F08A4E /* CoreBluetooth.framework in Frameworks */,
+				A8D077CE198074B400F08A4E /* CoreLocation.framework in Frameworks */,
 				A8D0779E198072EB00F08A4E /* CoreGraphics.framework in Frameworks */,
 				A8D077A0198072EB00F08A4E /* UIKit.framework in Frameworks */,
 				A8D0779C198072EB00F08A4E /* Foundation.framework in Frameworks */,
@@ -96,6 +108,8 @@
 		A8D0779A198072EB00F08A4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8D077CF198082C600F08A4E /* CoreBluetooth.framework */,
+				A8D077CD198074B400F08A4E /* CoreLocation.framework */,
 				A8D0779B198072EB00F08A4E /* Foundation.framework */,
 				A8D0779D198072EB00F08A4E /* CoreGraphics.framework */,
 				A8D0779F198072EB00F08A4E /* UIKit.framework */,
@@ -109,8 +123,12 @@
 			children = (
 				A8D077AA198072EB00F08A4E /* AppDelegate.h */,
 				A8D077AB198072EB00F08A4E /* AppDelegate.m */,
+				A8D077CA198072FD00F08A4E /* BeaconTableViewController.h */,
+				A8D077CB198072FD00F08A4E /* BeaconTableViewController.m */,
 				A8D077AD198072EB00F08A4E /* Images.xcassets */,
 				A8D077A2198072EB00F08A4E /* Supporting Files */,
+				A8D0BE621981B1D70033C4A3 /* TestBeacon.h */,
+				A8D0BE631981B1D70033C4A3 /* TestBeacon.m */,
 			);
 			path = BeaconDemo;
 			sourceTree = "<group>";
@@ -239,8 +257,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8D077CC198072FD00F08A4E /* BeaconTableViewController.m in Sources */,
 				A8D077AC198072EB00F08A4E /* AppDelegate.m in Sources */,
 				A8D077A8198072EB00F08A4E /* main.m in Sources */,
+				A8D0BE641981B1D70033C4A3 /* TestBeacon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +459,7 @@
 				A8D077C6198072EB00F08A4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8D077C7198072EB00F08A4E /* Build configuration list for PBXNativeTarget "BeaconDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +468,7 @@
 				A8D077C9198072EB00F08A4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
